@@ -40,6 +40,8 @@ dependencies {
         exclude group: 'org.springframework.boot', module: 'spring-boot-starter-tomcat'
     }
     implementation('org.springframework.cloud:spring-cloud-stream')
+
+    implementation('org.springframework.cloud:spring-cloud-gcp-starter-pubsub')
     //implementation('org.springframework.cloud:spring-cloud-gcp-starter-data-datastore')
 
     providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
@@ -56,7 +58,7 @@ dependencyManagement {
 
 appengine {
     deploy {
-        //version = 'GCLOUD_CONFIG'
-       // projectId = 'joachimproject-185809'
+        version = 'GCLOUD_CONFIG'
+        //projectId = 'joachimproject-185809'
     }
 }
