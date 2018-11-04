@@ -58,7 +58,7 @@ dependencyManagement {
 
 appengine {
     deploy {
-        version = 'GCLOUD_CONFIG'
+        //version = 'GCLOUD_CONFIG'
         //projectId = 'joachimproject-185809'
     }
 }
